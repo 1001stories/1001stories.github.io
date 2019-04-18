@@ -1,4 +1,8 @@
-*{margin:0; padding:0;}
+*{
+  margin:0;
+  padding:0;
+  object-fit: cover;
+}
 
 body {
   overflow-x: hidden;
@@ -15,8 +19,10 @@ body {
 }
 
 footer {
-  background: #000;
-  color: #ddd;
+  /*background: #000;*/
+  background-image: url('../img/cardboard.jpeg');
+  background-size: 100%;
+  color: black;
   padding: 30px 0 30px;
   text-align: center;
 }
@@ -393,6 +399,17 @@ footer p {
   z-index: 2;
 }
 
+.parallax-container {
+  min-height: 600px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.parallax-mirror {
+  object-fit: cover;
+}
+
 /* End The Journey */
 
 /* Share Your Story */
@@ -502,6 +519,10 @@ footer p {
 
   #intro p {
     padding-left: 10px;
+  }
+
+  .parallax-container {
+    min-height: auto;
   }
 
 }
