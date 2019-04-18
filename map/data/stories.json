@@ -182,14 +182,14 @@
     "quote": "'I paddled over to it and I opened it and it was a message in a bottle.'"
   },
   {
-    "href": "http://1001stories.org/1001-Stories-Map/data/stories/steven.json",
+    "href": "https://1001stories.org/map/data/stories/steven.json",
     "uid": "steven",
     "title": "Steven Maina",
     "date": "August 21, 2017",
     "location": "Denmark",
     "latitude": 56.153919,
     "longitude": 10.1975273,
-    "preview_image": "http://1001stories.org/1001-Stories-Map/resources/photos/Bike3.jpg",
+    "preview_image": "https://1001stories.org/map/resources/photos/Bike3.jpg",
     "body": "fetching water as a kid in Kenya, missed opportunities from all those hours",
     "audio": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/592655331&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
     "street_view": "https://www.google.com/maps/embed?pb=!4v1552879438661!6m8!1m7!1sY7prh1gWlVJsKKf2BpYdKw!2m2!1d56.153906560395!2d10.19781841828325!3f281.2909005866982!4f0!5f0.7820865974627469",
