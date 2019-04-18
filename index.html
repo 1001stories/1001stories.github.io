@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1,001 Stories</title>
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.0.js"
+  integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+  crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+<!-- Mobile Nav Bar -->
+
+<div class="topnav">
+  <a href="#home" class="active"></a>
+  <div id="myLinks">
+    <a href="map/map.html">The Story Map</a>
+    <a href="journey.html">The Journey</a>
+    <a href="team.html">Meet the Team</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<!-- End Mobile Nav Bar -->
+
+
+  <div id="top">
+    <div id="navbar" class='layer' data-depth='1' data-type='parallax'>
+      <a href="index.html"><img class="logo" src="assets/img/1001-stories-logo-flat.png"></a>
+      <ul id="nav-items">
+        <li></li>
+        <li><a href="map/map.html">The Story Map</a></li>
+        <li><a href="journey.html">The Journey</a></li>
+        <li><a href="team.html">Meet the Team</a></li>
+      </ul>
+    </div>
+
+    <div id='mobile-waveforms'>
+      <img src="assets/img/1001-bikeride-black-loop-optimize.gif">
+    </div>
+
+    <div id='waveforms'>
+      <div id="layer-bg" class='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
+      <div id="cardboard" class='layer-0 layer' data-depth='0.40' data-type='parallax'></div>
+      <!-- <div class='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
+      <div class='layer-2 layer' data-depth='0.30' data-type='parallax'></div>
+      <div class='layer-3 layer' data-depth='0.40' data-type='parallax'></div>
+      <div class='layer-4 layer' data-depth='0.50' data-type='parallax'></div>
+      <div class='layer-5 layer' data-depth='0.85' data-type='parallax'></div> -->
+    </div>
+  </div>
+
+  <div id="intro">
+  	<h2>Hi, I'm Devi!</h2>
+      <img src="assets/img/devi-intro.jpeg">
+  		<p>For the last 5 years, I've been traveling around the world on a mission to record 1,001 stories on water and climate change. To date I have documented 850 stories in 20 countries on six continents. Take a listen.</p>
+  </div>
+
+  <div id="menu">
+    <table>
+      <tr>
+        <td id="explore-map">
+          <!-- Explore the Story Map -->
+          <a href="map/map.html"><img src="assets/img/menu-map-chuttersnap-176806-unsplash.jpg"></a>
+          <p class="menu-text">The Story Map</p>
+        </td>
+        <td id="journey">
+          <!-- See My Journey -->
+          <a href="journey.html"><img src="assets/img/menu-journey2.jpeg"></a>
+          <p class="menu-text">The Journey</p>
+        </td>
+        <td id="share">
+          <!-- Share Your Story -->
+          <a href="share.html"><img src="assets/img/menu-share.jpeg"></a>
+          <p class="menu-text">Share Your Story</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+  <script>
+    // var width = window.innerWidth;
+    var width = document.getElementById("navbar").clientWidth;
+    console.log(window.innerWidth, document.getElementById("menu").clientWidth);
+    var height = window.innerHeight;
+
+    if (height < width*(9/16)) {
+      var newWidth = height*(16/9);
+      $("#waveforms").css('height', height);
+      $("#waveforms").css('width', width);
+      // $("#navbar").css('width', width);
+      $(".layer-bg").css('background-size', (newWidth).toString()+"px "+ height.toString()+"px");
+      $(".layer-0").css('background-size', (width).toString()+"px "+ (height).toString()+"px");
+      // $(".layer-1").css('background-size', (newWidth).toString()+"px "+ height.toString()+"px");
+      // $(".layer-2").css('background-size', (newWidth).toString()+"px "+ height.toString()+"px");
+      // $(".layer-3").css('background-size', (newWidth).toString()+"px "+ height.toString()+"px");
+      // $(".layer-4").css('background-size', (newWidth).toString()+"px "+ height.toString()+"px");
+      // $(".layer-5").css('background-size', (newWidth).toString()+"px "+ height.toString()+"px");
+      console.log("FIRST");
+    } else {
+      var newHeight = width*(9/16);
+      $("#waveforms").css('height', newHeight);
+      $("#waveforms").css('width', width);
+      if (width < "768"){
+        $("#waveforms").css('height', newHeight/2);
+        $("#waveforms").css('width', width/2);
+        $(".layer").css('height', document.getElementById("layer-bg").clientHeight);
+        $(".layer").css('width', "100%");
+      }
+      console.log("SECOND");
+    }
+  </script>
+
+  <script>
+
+  if (width > "768"){
+
+    (function () {
+    window.addEventListener('scroll', function (event) {
+      var depth, i, layer, layers, len, movement, topDistance, translate3d;
+      topDistance = this.pageYOffset;
+      layers = document.querySelectorAll("[data-type='parallax']");
+      for (i = 0, len = layers.length; i < len; i++) {
+        // if (window.CP.shouldStopExecution(0)) break;
+        layer = layers[i];
+        depth = layer.getAttribute('data-depth');
+        movement = -(topDistance * depth);
+        translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+        layer.style['-webkit-transform'] = translate3d;
+        layer.style['-moz-transform'] = translate3d;
+        layer.style['-ms-transform'] = translate3d;
+        layer.style['-o-transform'] = translate3d;
+        layer.style.transform = translate3d;
+      } //window.CP.exitedLoop(0);
+    });
+
+    }).call(this);
+  }
+</script>
+
+</body>
+<footer>
+  <span><a href="https://twitter.com/devi_lockwood?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false">Follow @devi_lockwood</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
+</footer>
+</html>

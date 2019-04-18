@@ -1,0 +1,509 @@
+*{margin:0; padding:0;}
+
+body {
+  overflow-x: hidden;
+}
+
+.logo {
+  background-image: url("../img/1001-stories-logo-flat.png");
+  height: 60px;
+  position: absolute;
+/*  top: 10px;
+  left: 10px;*/
+  display: inline;
+  border: solid black 2px;
+}
+
+footer {
+  background: #000;
+  color: #ddd;
+  padding: 30px 0 30px;
+  text-align: center;
+}
+
+
+/* Navbar */
+
+#top {
+  position: relative;
+}
+
+#navbar {
+  width: 100%;
+  top: 0px;
+  z-index: 1;
+}
+
+#navbar .logo {
+  -webkit-filter: invert(100%);
+  top: 2px;
+  left: 8px;
+}
+
+#navbar .logo:hover {
+  border: solid 4px black;
+}
+
+#navbar .logo:click {
+  opacity: 0.5;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #a58855;
+}
+
+#navbar li {
+  display: inline;
+  padding: 15px;
+  background-color: #a58855;
+  float: left;
+  width: 20%;
+}
+
+#navbar a {
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  font-weight: 600;
+  /* border: white solid 2px; */
+  text-decoration: underline;
+}
+
+/* Mobile Nav Bar */
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #a58855;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  display: none;
+  overflow: hidden;
+  background-color: #a58855;
+  position: relative;
+  z-index: 2;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-family: 'Josefin Slab', serif;
+  font-size: 20px;
+  text-align: right;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  font-weight: bold;
+}
+
+.active {
+  background-color: #a58855;
+  color: white;
+  height: 14px;
+}
+
+/* End Mobile Nav Bar */
+
+/* End navbar */
+
+#intro {
+  padding-top: 25px;
+  background-color: #fffafa;
+  border-top: black 3px solid;
+  min-height: 300px;
+  width: 100%;
+  overflow-x: hidden;
+  z-index: -10;
+}
+
+#intro h2 {
+  text-align: center;
+}
+
+#intro p {
+  /* width: 100%; */
+  font-size: 16px;
+  color: black;
+  /* padding: 5 px; */
+  margin-right: 20px;
+}
+
+#intro img{
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 210px
+  /* object-fit: contain; */
+}
+
+h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+}
+
+p {
+  font-family: 'Josefin Slab', serif;
+  font-size: 30px;
+  line-height: 25px;
+}
+
+/* The Team */
+
+#team {
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#team img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#team img:hover {
+  border: 3px solid black;
+}
+
+#team td {
+  padding: 12px;
+  width: 25%;
+}
+
+#team-feature td {
+  padding: 12px;
+}
+
+#team-feature img {
+ width: 100%;
+}
+
+#headshot-cell {
+  width: 25%;
+}
+
+#headshot {
+  width:100%;
+  border-radius: 50%;
+}
+
+#page-title {
+  text-align: center;
+}
+
+#bio {
+  font-size: 20px;
+}
+
+/* End The Team */
+
+footer p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+}
+
+/* Main Page Parallax */
+/*#mobile-waveforms {
+  display: none;
+}*/
+#mobile-waveforms img {
+  display: none;
+  max-width: 100%;
+  background-image: url('../img/cardboard.jpeg');
+  background-size: 100%;
+}
+
+#waveforms {
+	overflow: hidden;
+  overflow-x: hidden;
+	position: relative;
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/*#cardboard {
+  position: fixed;
+  top:0;
+  left:0;
+}*/
+
+.layer {
+	background-position: center top;
+/*	background-size: auto;*/
+	background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+	position: absolute;
+  /*top: 0px;*/
+  left: 0px;
+	z-index: -1;
+  display: block;
+  /*overflow-x: hidden;*/
+}
+
+.layer-0 {
+	background-image: url('../img/cardboard.jpeg');
+  background-size: 100%;
+  background-position: center top;
+  z-index: -2;
+  position: fixed;
+  top:0;
+  left:0;
+}
+
+.layer-bg {
+	background-image: url('../img/1001-bikeride-black-loop-optimize.gif');
+  background-size: 100%;
+  background-position: center top;
+  z-index: -1;
+}
+
+.layer-1 {
+	background-image: url('../img/1001-soundspectrum2.png');
+	background-position: center top;
+  background-size: 100%;
+  /*margin-top: 70px;*/
+  z-index: -2;
+}
+.layer-2 {
+	background-image: url('../img/1001-soundspectrum3.png');
+  background-size: 100%;
+  background-position: center top;
+  /*margin-top: 90px;*/
+  z-index: -2;
+}
+.layer-3 {
+	background-image: url('../img/1001-soundspectrum4.png');
+	background-position: center top;
+  background-size: 100%;
+  margin-top: 50px;
+}
+.layer-4 {
+	background-image: url('../img/1001-soundspectrum5.png');
+  background-size: 100%;
+  background-position: center top;
+  margin-top: 50px;
+}
+.layer-5 {
+	background-image: url('../img/1001-soundspectrum6.png');
+  background-size: 100%;
+  background-position: center top;
+  z-index: -5;
+}
+
+/* .layer-overlay {
+	background-image: url('../img/1001-soundspectrum6.png');
+} */
+
+/* End Main Page Parallax */
+
+#menu {
+  background-color: black;
+  z-index: 2;
+  width: 100%;
+}
+
+#menu table {
+  width: 100%;
+  z-index: 2;
+}
+
+#menu td {
+  width: 33.33%;
+  border: solid black 2px;
+  position: relative;
+  z-index: 2;
+}
+
+#menu img {
+  width: 100%;
+  z-index: 2;
+}
+
+.menu-text {
+  position: absolute;
+  /* width: 100%; */
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+  padding: 20px 0px;
+  padding-left: 20px;
+  z-index: 2;
+}
+
+#menu td:hover {
+  opacity: 0.5;
+  z-index: 2;
+}
+
+/* The Journey */
+.journey-text p {
+  font-family: 'Josefin Slab', serif;
+  font-size: 20px;
+  line-height: 25px;
+  color: black;
+  padding: 20px;
+  margin: 0;
+  z-index: 2;
+}
+
+.journey-text {
+  /*background-color: black;*/
+  background-image: url('../img/cardboard.jpeg');
+  background-size: 100%;
+  z-index: 2;
+}
+
+/* End The Journey */
+
+/* Share Your Story */
+#cover-img {
+  width: 100%;
+}
+
+#cover-container {
+  position: relative;
+}
+
+#cover-text {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  /* background-color: black;
+  opacity: 0.5; */
+  color: white;
+  padding: 20px 0px;
+  z-index: 2;
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+  text-align: center;
+}
+
+#call-for-stories p {
+  font-family: 'Josefin Slab', serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#return-home {
+  text-align: center;
+}
+
+#return-home a {
+  background-color: #a58855;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  font-size: 60;
+}
+
+#return-home a:hover {
+  /*border: solid black 2px;*/
+  box-shadow: 2px 2px 2px 2px grey;
+}
+
+#return-home a:active {
+  opacity: 0.5;
+}
+
+/* End Share Your Story */
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .topnav {
+    display: block;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  #waveforms {
+    display: none;
+  }
+
+  #mobile-waveforms img {
+    display: block;
+  }
+/*	 .layer-1,.layer-2,.layer-3,.layer-4,.layer-5 {
+		display: none;
+	}*/
+  .layer-0 {
+  	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  #menu td {
+    display: block;
+    width: 100%;
+  }
+
+  #intro {
+    width: 100%;
+    float: left;
+    padding: 0;
+  }
+
+  #navbar {
+    max-width: 100%;
+    left: 0px;
+  }
+
+  #intro img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  #intro p {
+    padding-left: 10px;
+  }
+
+}
+
+/* End parallax */
