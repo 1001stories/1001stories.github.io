@@ -14,7 +14,7 @@ document.getElementById("anna").addEventListener("mouseover", function () {
 
 document.getElementById("samia").addEventListener("mouseover", function () {
 	event.preventDefault()
-	document.getElementById("bio").innerHTML = "<a href='samiabouzid.com'>Samia Bouzid</a> is a multimedia storyteller who tells stories about science and the places it intersects with people’s lives. She has written scripts and edited videos for the NOVA | PBS YouTube channel “What the Physics?!” and written for the digital magazine “NOVA Next.” She currently works as a researcher at the Richard Lewis Media Group, which develops media for museums. She received her M.A. from the CUNY Graduate School of Journalism. She is currently based in Boston.";
+	document.getElementById("bio").innerHTML = "<a href='https://samiabouzid.com'>Samia Bouzid</a> is a multimedia storyteller who tells stories about science and the places it intersects with people’s lives. She has written scripts and edited videos for the NOVA | PBS YouTube channel “What the Physics?!” and written for the digital magazine “NOVA Next.” She currently works as a researcher at the Richard Lewis Media Group, which develops media for museums. She received her M.A. from the CUNY Graduate School of Journalism. She is currently based in Boston.";
 	document.getElementById("headshot").src = "assets/img/team-samia-feature.jpg";
 	document.getElementById("name").innerHTML = "Samia Bouzid";
 })
