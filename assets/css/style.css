@@ -158,7 +158,8 @@ footer {
 
 #intro p {
   /* width: 100%; */
-  font-size: 16px;
+  font-size: 22px;
+  line-height: 25px;
   color: black;
   /* padding: 5 px; */
   margin-right: 20px;
@@ -240,7 +241,15 @@ p {
 
 footer p {
   font-family: 'Amatic SC', cursive;
-  font-size: 20px;
+  font-size: 25px;
+  line-height: 26px;
+  font-weight: bolder;
+  text-shadow: 0 0px 14px white;
+  padding: 10px;
+}
+
+.social-media {
+  width: 40px;
 }
 
 /* Main Page Parallax */
@@ -388,10 +397,11 @@ footer p {
   font-weight: bolder;
   line-height: 28px;
   color: black;
-  padding: 20px;
+  padding: 50px 30px;
   margin: 0;
   z-index: 2;
   text-shadow: 0 0px 14px white;
+
 }
 
 .journey-text {
@@ -439,7 +449,8 @@ footer p {
 
 #call-for-stories p {
   font-family: 'Josefin Slab', serif;
-  font-size: 20px;
+  font-size: 25px;
+  line-height: 28px;
   text-align: center;
 }
 
@@ -521,6 +532,8 @@ footer p {
 
   #intro p {
     padding-left: 10px;
+    font-size: 25px;
+    line-height: 28px;
   }
 
   .parallax-container {
